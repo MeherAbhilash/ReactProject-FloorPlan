@@ -1,22 +1,16 @@
 .grid-container {
     display: flex;
     justify-content: center; 
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    grid-template-rows: auto; /* Auto-sized rows */
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto; 
     margin: 0;
-    padding: 50px; /* Padding around the entire grid layout */
+    padding: 50px; 
   }
   .vertical-text {
     writing-mode: vertical-rl;
     transform: rotate(0deg);
     width: 10px;
 }
-
-  .grid {
-    border: 1px solid #100f0f; /* Border for each grid */
-    padding: 1px; /* Padding within each grid */
-  }
-  
   
   .table {
     
@@ -28,7 +22,6 @@
   }
     
   .core-column {
-     /* Adjust the remaining width for the Cores column */
      width:200px;
      font-weight: bold;
      
@@ -53,8 +46,8 @@
   }
   
   .diode-cell {
-    background-color: blue; /* Diode cell color */
-    cursor: pointer; /* Cursor to indicate clickable */
+    background-color: blue; 
+    cursor: pointer;
   }
   
   .unmasked-cell {
