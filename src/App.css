@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.grid-container {
+    display: flex;
+    justify-content: center; 
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-rows: auto; /* Auto-sized rows */
+    margin: 0;
+    padding: 50px; /* Padding around the entire grid layout */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
+  .vertical-text {
+    writing-mode: vertical-rl;
     transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    width: 10px;
 }
+
+  .grid {
+    border: 1px solid #100f0f; /* Border for each grid */
+    padding: 1px; /* Padding within each grid */
+  }
+  
+  
+  .table {
+    
+    border-collapse: collapse;
+    border: #100f0f;
+    width: 50%;
+    font-size: small;
+   
+  }
+    
+  .core-column {
+     /* Adjust the remaining width for the Cores column */
+     width:200px;
+     font-weight: bold;
+     
+  }
+  .empty-cell{
+    width: 20px;
+  }
+    .table td {
+    border: 1px solid black;
+    padding: 0px;
+    text-align: center;
+    
+  }
+  .table th {
+    margin: 0;
+    color: white;
+    border: 2px solid black;
+    background-color: rgb(5, 54, 81);
+    text-align: center;
+    padding: 0px;
+    
+  }
+  
+  .diode-cell {
+    background-color: blue; /* Diode cell color */
+    cursor: pointer; /* Cursor to indicate clickable */
+  }
+  
+  .unmasked-cell {
+    background-color: yellow; 
+    cursor: pointer;
+  }
